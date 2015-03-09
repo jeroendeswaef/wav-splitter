@@ -38,7 +38,7 @@ public class WaveSplitter {
                 WavFile outputWavFile = WavFile.newWavFile(
                         new File("out" + (fileCount + 1) + ".wav"),
                         inputWavFile.getNumChannels(),
-                        inputWavFile.getNumFrames(),
+                        framesRead,
                         inputWavFile.getValidBits(),
                         inputWavFile.getSampleRate());
 
